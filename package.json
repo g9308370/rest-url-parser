@@ -1,0 +1,41 @@
+{
+  "name": "rest-url-parser",
+  "version": "0.0.1",
+  "description": "restful url parser",
+  "main": "src/RestUrl.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=testing node_modules/karma/bin/karma start karma.conf.js --single-run",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://g9308370@github.com/g9308370/rest-url-parser.git"
+  },
+  "keywords": [
+    "restful",
+    "parser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g9308370/rest-url-parser/issues"
+  },
+  "homepage": "https://github.com/g9308370/rest-url-parser#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.4",
+    "laravel-mix": "^1.4.2",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "cross-env": "^5.0.1"
+  }
+}
